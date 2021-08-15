@@ -1,9 +1,12 @@
 {
+  "homepage": "silversurferbeats.github.io/RickAndMortiApp",
   "name": "react-webpack",
   "version": "1.0.0",
   "description": "React Webpack Template",
   "main": "index.js",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "build": "webpack",
     "dev": "webpack serve --mode development --open chrome --devtool eval-cheap-module-source-map"
   },
